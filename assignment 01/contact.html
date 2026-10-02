@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Seedling</title>
+<meta name="description" content="Contact the Seedling team with questions, feedback or plant suggestions.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tw-config.js"></script>
+</head>
+<body class="font-sans text-slate-700 bg-white antialiased">
+<div id="site-nav"></div>
+<main>
+<section class="bg-leaf-50 border-b border-leaf-100"><div class="max-w-6xl mx-auto px-4 py-12"><nav aria-label="Breadcrumb" class="text-sm mb-3"><a href="index.html" class="text-leaf-600 font-semibold hover:underline">Home</a> <span class="mx-1">/</span> Contact</nav><h1 class="font-display text-4xl sm:text-5xl font-extrabold text-leaf-900">Talk to a real gardener.</h1><p class="mt-4 max-w-xl text-lg">Questions, feedback or a plant we should add? We reply within one working day.</p></div></section>
+<section class="max-w-6xl mx-auto px-4 mt-20 grid lg:grid-cols-3 gap-8">
+<form class="lg:col-span-2 rounded-2xl border border-leaf-100 p-6 sm:p-8 space-y-5" data-form="contact" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<h2 class="font-display text-2xl font-bold text-leaf-900">Send a message</h2>
+<div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-sm font-semibold text-slate-800 mb-1" for="name">Full name</label><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" id="name" name="name" required autocomplete="name"></div><div><label class="block text-sm font-semibold text-slate-800 mb-1" for="email">Email</label><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" type="email" id="email" name="email" required autocomplete="email"></div></div>
+<div><label class="block text-sm font-semibold text-slate-800 mb-1" for="topic">Topic</label><select class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" id="topic" name="topic"><option>General question</option><option>Billing</option><option>Report a bug</option><option>Suggest a plant</option></select></div>
+<div><label class="block text-sm font-semibold text-slate-800 mb-1" for="message">Message</label><textarea class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" id="message" name="message" rows="5" required minlength="10"></textarea></div>
+<label class="flex items-center gap-2 text-sm"><input type="checkbox" name="newsletter" class="w-4 h-4 accent-emerald-700"> Also send me the Monday garden list</label>
+<button type="submit" class="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold bg-leaf-700 text-white hover:bg-leaf-600 w-full sm:w-auto">Send message</button><div data-msg role="status" aria-live="polite"></div></form>
+<aside class="space-y-4"><h2 class="font-display text-2xl font-bold text-leaf-900">Other ways to reach us</h2>
+<div class="rounded-xl bg-leaf-50 p-4"><p class="text-sm font-semibold text-leaf-600">Email</p><p class="font-semibold text-slate-900">hello@seedling.example</p></div><div class="rounded-xl bg-leaf-50 p-4"><p class="text-sm font-semibold text-leaf-600">Phone</p><p class="font-semibold text-slate-900">+92 41 000 0000</p></div><div class="rounded-xl bg-leaf-50 p-4"><p class="text-sm font-semibold text-leaf-600">Office</p><p class="font-semibold text-slate-900">12 Garden Lane, Faisalabad</p></div>
+<table class="w-full text-sm border border-leaf-100 rounded-lg overflow-hidden"><caption class="sr-only">Support hours</caption><tbody><tr class="border-b border-leaf-100 last:border-0"><th class="text-left p-2 font-semibold">Mon–Fri</th><td class="p-2">9am – 6pm</td></tr><tr class="border-b border-leaf-100 last:border-0"><th class="text-left p-2 font-semibold">Saturday</th><td class="p-2">10am – 2pm</td></tr><tr class="border-b border-leaf-100 last:border-0"><th class="text-left p-2 font-semibold">Sunday</th><td class="p-2">Closed</td></tr></tbody></table>
+<div class="flex gap-2"><a href="#" class="px-3 py-1.5 rounded-full border border-leaf-500 text-leaf-700 text-sm font-semibold hover:bg-leaf-50">Instagram</a><a href="#" class="px-3 py-1.5 rounded-full border border-leaf-500 text-leaf-700 text-sm font-semibold hover:bg-leaf-50">YouTube</a><a href="#" class="px-3 py-1.5 rounded-full border border-leaf-500 text-leaf-700 text-sm font-semibold hover:bg-leaf-50">X</a></div></aside></section>
+<section class="max-w-6xl mx-auto px-4 mt-20"><div class="rounded-2xl bg-leaf-100 h-56 flex items-center justify-center text-leaf-700 font-display font-semibold text-center px-4">Map placeholder: 12 Garden Lane, Faisalabad</div></section>
+<section class="max-w-3xl mx-auto px-4 mt-20 space-y-3"><h2 class="font-display text-3xl font-bold text-leaf-900 mb-4">Before you write</h2><details class="group border border-leaf-100 rounded-lg p-4 bg-white"><summary class="cursor-pointer font-semibold text-slate-900 flex justify-between">How do I reset my password?<span class="text-sun-500 group-open:rotate-45 transition">+</span></summary><p class="mt-2">Use the link on the sign in page.</p></details><details class="group border border-leaf-100 rounded-lg p-4 bg-white"><summary class="cursor-pointer font-semibold text-slate-900 flex justify-between">Can I export my plan?<span class="text-sun-500 group-open:rotate-45 transition">+</span></summary><p class="mt-2">Yes. Pro accounts can export a PDF calendar.</p></details></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up | Seedling</title>
+<meta name="description" content="Create a free Seedling account and plan your first garden bed in two minutes.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tw-config.js"></script>
+</head>
+<body class="font-sans text-slate-700 bg-white antialiased">
+<div id="site-nav"></div>
+<main>
+<section class="max-w-6xl mx-auto px-4 pt-12 grid lg:grid-cols-2 gap-10 items-stretch"><div class="rounded-2xl border border-leaf-100 p-6 sm:p-10"><span class="inline-block px-3 py-1 rounded-full bg-leaf-100 text-leaf-700 text-sm font-semibold">Free forever plan</span><h1 class="font-display text-3xl font-extrabold text-leaf-900 mt-3">Create your free account</h1><p class="mt-1 mb-6">No card needed. Set up your first bed in two minutes.</p><div class="grid grid-cols-2 gap-3"><button type="button" class="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2 border-leaf-700 text-leaf-700 hover:bg-leaf-50 !py-2">Google</button><button type="button" class="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2 border-leaf-700 text-leaf-700 hover:bg-leaf-50 !py-2">GitHub</button></div><div class="flex items-center gap-3 text-sm my-5"><hr class="flex-1 border-slate-200">or with email<hr class="flex-1 border-slate-200"></div><form class="space-y-5" data-form="signup"><div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-sm font-semibold text-slate-800 mb-1" for="n">Full name</label><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" id="n" name="name" required autocomplete="name"></div><div><label class="block text-sm font-semibold text-slate-800 mb-1" for="e">Email</label><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" type="email" id="e" name="email" required autocomplete="email"></div></div>
+<div><label class="block text-sm font-semibold text-slate-800 mb-1" for="z">Growing zone</label><select class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" id="z" name="zone"><option>Not sure yet</option><option>Cool (zones 3–6)</option><option>Temperate (zones 7–9)</option><option>Hot (zones 10+)</option></select></div>
+<div><label class="block text-sm font-semibold text-slate-800 mb-1" for="p">Password</label><div class="flex gap-2"><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" type="password" id="p" name="password" required minlength="8"><button type="button" data-toggle-pw class="px-3 text-sm font-semibold text-leaf-600">Show</button></div></div><div><div class="w-full bg-slate-200 rounded-full h-2"><div id="pw-meter" class="h-2 rounded-full w-0"></div></div><p id="pw-label" class="text-xs mt-1">Enter a password</p></div><div><label class="block text-sm font-semibold text-slate-800 mb-1" for="c">Confirm password</label><div class="flex gap-2"><input class="w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:border-leaf-500 focus:ring-2 focus:ring-leaf-100 outline-none" type="password" id="c" name="confirm" required minlength="8"><button type="button" data-toggle-pw class="px-3 text-sm font-semibold text-leaf-600">Show</button></div></div>
+<label class="flex items-start gap-2 text-sm"><input type="checkbox" required class="w-4 h-4 mt-0.5 accent-emerald-700">I agree to the terms and privacy policy.</label>
+<button type="submit" class="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold bg-leaf-700 text-white hover:bg-leaf-600 w-full">Create account</button><div data-msg role="status" aria-live="polite"></div><p class="text-center text-sm">Already a member? <a href="signin.html" class="font-semibold text-leaf-600 hover:underline">Sign in</a></p></form></div>
+<aside class="hidden lg:flex flex-col justify-between rounded-2xl bg-leaf-700 text-white p-10"><div><h2 class="font-display text-2xl font-bold">What you get for free</h2><ul class="mt-4 space-y-3 text-leaf-100"><li>✓ 3 garden beds</li><li>✓ Frost-aware calendar</li><li>✓ Weekly email list</li><li>✓ 1,200-plant database</li></ul></div><p class="text-sm text-leaf-100/80 border-t border-white/20 pt-4">Upgrade to Pro any time for unlimited beds and weather alerts.</p></aside></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
