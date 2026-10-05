@@ -1,0 +1,1 @@
+tailwind.config={theme:{extend:{colors:{leaf:{50:'#eef6f1',100:'#d6eadf',500:'#2f7a5a',600:'#26654a',700:'#1f4d3a',900:'#12291f'},sun:{400:'#f2b134',500:'#e39b12'},clay:'#b4532a'},fontFamily:{display:['Bricolage Grotesque','system-ui','sans-serif'],sans:['Source Sans 3','system-ui','sans-serif']}}}};
