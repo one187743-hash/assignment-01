@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageView } from '../types';
+import { SeedlingLogo } from './SeedlingLogo';
 
 interface FooterProps {
   onNavigate: (page: PageView) => void;
@@ -19,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Brand Column */}
         <div className="lg:col-span-2">
           <p className="font-display text-xl font-bold text-white flex items-center gap-2">
-            <img src="/assets/img/favicon.svg" alt="" className="w-7 h-7" />
+            <SeedlingLogo className="w-7 h-7 rounded-md" />
             <span>Seedling</span>
           </p>
           <p className="mt-3 max-w-sm text-leaf-100/80 text-sm leading-relaxed">

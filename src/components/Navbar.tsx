@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { PageView } from '../types';
 import { Menu, X, Sprout, CloudSun, Calendar, Info, Mail, LogIn, UserPlus, Sparkles } from 'lucide-react';
 
+import { SeedlingLogo } from './SeedlingLogo';
+
 interface NavbarProps {
   currentPage: PageView;
   onNavigate: (page: PageView) => void;
@@ -33,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           onClick={() => handleNavClick('home')}
           className="flex items-center gap-2 font-display text-xl font-bold text-leaf-700 hover:text-leaf-600 transition cursor-pointer"
         >
-          <img src="/assets/img/favicon.svg" alt="Seedling Logo" className="w-8 h-8" />
+          <SeedlingLogo className="w-8 h-8 shrink-0 rounded-lg shadow-2xs" />
           <span>Seedling</span>
         </button>
 
