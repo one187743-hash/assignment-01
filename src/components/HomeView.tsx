@@ -91,7 +91,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               onClick={() => onNavigate('planner')}
               className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold bg-leaf-700 text-white hover:bg-leaf-600 shadow-md transition cursor-pointer gap-2"
             >
-              <span>Plan my garden (CRUD)</span>
+              <span>Plan my garden</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button

@@ -12,10 +12,10 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navItems: { id: PageView; label: string; icon: React.ReactNode; isNew?: boolean }[] = [
+  const navItems: { id: PageView; label: string; icon: React.ReactNode }[] = [
     { id: 'home', label: 'Home', icon: <Sprout className="w-4 h-4" /> },
-    { id: 'planner', label: 'Garden Planner (CRUD)', icon: <Calendar className="w-4 h-4" />, isNew: true },
-    { id: 'weather', label: 'Weather & Frost API', icon: <CloudSun className="w-4 h-4" />, isNew: true },
+    { id: 'planner', label: 'Garden Planner', icon: <Calendar className="w-4 h-4" /> },
+    { id: 'weather', label: 'Weather', icon: <CloudSun className="w-4 h-4" /> },
     { id: 'tips', label: 'Seasonal Tips', icon: <Sparkles className="w-4 h-4" /> },
     { id: 'about', label: 'About', icon: <Info className="w-4 h-4" /> },
     { id: 'contact', label: 'Contact', icon: <Mail className="w-4 h-4" /> },
@@ -54,11 +54,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                   }`}
                 >
                   <span>{item.label}</span>
-                  {item.isNew && (
-                    <span className="bg-sun-400 text-leaf-900 text-[10px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wider">
-                      JS
-                    </span>
-                  )}
                 </button>
               </li>
             );
@@ -115,11 +110,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                   {item.icon}
                   <span>{item.label}</span>
                 </div>
-                {item.isNew && (
-                  <span className="bg-sun-400 text-leaf-900 text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                    JS
-                  </span>
-                )}
               </button>
             );
           })}

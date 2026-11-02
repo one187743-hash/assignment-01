@@ -46,19 +46,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <li>
               <button
                 onClick={() => handleNavClick('planner')}
-                className="hover:text-sun-400 transition cursor-pointer flex items-center gap-1.5"
+                className="hover:text-sun-400 transition cursor-pointer"
               >
-                <span>Garden Planner</span>
-                <span className="text-[10px] bg-sun-400 text-leaf-900 px-1 rounded-sm font-bold">CRUD</span>
+                Garden Planner
               </button>
             </li>
             <li>
               <button
                 onClick={() => handleNavClick('weather')}
-                className="hover:text-sun-400 transition cursor-pointer flex items-center gap-1.5"
+                className="hover:text-sun-400 transition cursor-pointer"
               >
-                <span>Weather & Frost</span>
-                <span className="text-[10px] bg-leaf-500 text-white px-1 rounded-sm font-bold">Axios</span>
+                Weather
               </button>
             </li>
             <li>
