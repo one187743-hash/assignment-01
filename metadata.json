@@ -1,0 +1,6 @@
+{
+  "name": "Seedling - Garden Planner & Weather Dashboard",
+  "description": "Weekly garden planner with CRUD plant records, LocalStorage persistence, and live weather forecast API integration using Axios.",
+  "permissions": [],
+  "capabilities": []
+}
